@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ဓမ္မရောင်ခြည်</string>
+    <string name="title_activity_main">ဓမ္မရောင်ခြည်</string>
+    <string name="package_name">com.dhammaywaygyi.app</string>
+    <string name="custom_url_scheme">com.dhammaywaygyi.app</string>
+</resources>

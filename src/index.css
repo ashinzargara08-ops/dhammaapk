@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-obsidian: #050505;
+    --bg-surface: #0b0e0c;
+    --bg-elevated: #111714;
+    --emerald-deep: #063b2b;
+    --emerald-mid: #0b533d;
+    --gold-antique: #c9a227;
+    --gold-bright: #e8c96a;
+    --gold-dark: #8c6d16;
+    --text-ivory: #f7f5ee;
+    --text-muted: #a8a393;
+  }
+
+  html, body {
+    background-color: #050505;
+    color: #f7f5ee;
+    font-family: "Noto Sans Myanmar", "Padauk", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    overscroll-behavior-y: contain;
+  }
+}
+
+.font-display {
+  font-family: "Cinzel", "Noto Sans Myanmar", serif;
+}
+
+.font-myanmar {
+  font-family: "Noto Sans Myanmar", "Padauk", sans-serif;
+  line-height: 1.72;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle gold scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 162, 39, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 162, 39, 0.45);
+}
+
+/* Hide scrollbar for horizontal carousels while keeping scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.04);
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 3.6s ease-in-out infinite;
+}
+
+@keyframes waveBar {
+  0%, 100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.wave-bar-active {
+  animation: waveBar 0.85s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+/* Subtle gold hairline border card */
+.dhamma-card {
+  background: linear-gradient(155deg, rgba(16, 23, 19, 0.92) 0%, rgba(8, 10, 9, 0.98) 100%);
+  border: 1px solid rgba(201, 162, 39, 0.22);
+  box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(232, 201, 106, 0.08);
+}
+
+.dhamma-card:hover {
+  border-color: rgba(201, 162, 39, 0.45);
+}
+
+.emerald-sanctuary-surface {
+  background: radial-gradient(circle at top right, rgba(6, 59, 43, 0.48), rgba(5, 5, 5, 0.96) 68%);
+  border: 1px solid rgba(201, 162, 39, 0.28);
+}

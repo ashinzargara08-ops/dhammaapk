@@ -1,0 +1,6 @@
+{
+  "name": "ဓမ္မရောင်ခြည် (Dhamma Yway Gyi)",
+  "description": "Premium Buddhist Multimedia Sanctuary — Dhamma MP3 talks, MP4 videos, Podcasts, Dhamma texts, offline downloads, and single-owner administration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
